@@ -193,7 +193,8 @@ Unsuccessful: <code>{unsuccessful}</code></b>"""
         msg = await message.reply(REPLY_ERROR)
         await asyncio.sleep(8)
         await msg.delete()
-else:
+
+    else:
         await bot.send_photo(
         chat_id=message.from_user.id,
         photo="https://telegra.ph/file/75f17e0c5ec8efa06263b.jpg",
